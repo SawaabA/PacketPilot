@@ -1,0 +1,19 @@
+{
+  "purpose": "ARP, ICMP, and failed TCP handshake training",
+  "arp_request_packet": 1,
+  "arp_reply_packet": 2,
+  "icmp_echo_packets": [
+    3,
+    4
+  ],
+  "unanswered_syn_packets": [
+    5,
+    6,
+    7
+  ],
+  "expected_filters": [
+    "arp",
+    "icmp",
+    "tcp.flags.syn == 1 && tcp.flags.ack == 0"
+  ]
+}

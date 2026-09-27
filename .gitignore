@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+.venv/
+data/captures/*
+!data/captures/.gitkeep

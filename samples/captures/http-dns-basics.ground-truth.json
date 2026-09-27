@@ -1,0 +1,17 @@
+{
+  "purpose": "DNS and plaintext HTTP training",
+  "dns_query_packet": 1,
+  "dns_response_packet": 2,
+  "tcp_handshake_packets": [
+    3,
+    4,
+    5
+  ],
+  "http_get_packet": 6,
+  "http_response_packet": 8,
+  "expected_filters": [
+    "dns",
+    "http.request",
+    "tcp.flags.syn == 1"
+  ]
+}
